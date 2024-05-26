@@ -63,7 +63,7 @@ const Header: React.FunctionComponent<{}> = ({}) => {
               </Link>
             </li>
             <li className="flex px-12">
-              <Link href="/" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray">
+              <Link href="#resume" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray">
                 Resume
               </Link>
             </li>
