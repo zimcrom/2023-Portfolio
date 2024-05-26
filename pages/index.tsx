@@ -3,6 +3,7 @@ import TextBlock from "../components/TextBlock";
 import Experience from "../components/Experience";
 import Spacer from "../components/Spacer/Spacer";
 import Contact from "../components/Contact";
+import ResumeLink from "../components/ResumeLink";
 
 const Home: NextPage<{}> = ({}) => {
   return (
@@ -28,6 +29,8 @@ const Home: NextPage<{}> = ({}) => {
         paragraph2="I love a good challenge and enjoy finding creative ways to solve problems. Teaching and mentoring are close to my heart - nothing beats helping future engineers find their footing and reach their potential."
         align="justify-center"
       />
+      <Spacer />
+      <ResumeLink />
       <Spacer />
       <Contact
         header1="Get in Touch"
