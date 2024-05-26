@@ -1,6 +1,27 @@
+@use './fonts.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.skip-link {
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 1;
+    position: absolute;
+    text-decoration: underline;
+    top: 0;
+    left: 150px;
+    &:focus {
+        height: auto;
+        width: auto;
+        background-color: white;
+        overflow: visible;
+        padding: 20px;
+
+    }
+}
 
 * {
     color: white;

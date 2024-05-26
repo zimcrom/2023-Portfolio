@@ -1,24 +1,40 @@
-const plugin = require("tailwindcss/plugin")
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    '.src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./pages/**/*.{html,js,tsx}", "./components/**/*.{html,js,tsx}"],
   theme: {
+    fontSize: {
+      xxs: "0.5rem",
+      xs: "0.75rem",
+      sm: "0.875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.75rem",
+      "4xl": "2rem",
+      "5xl": "2.5rem",
+      "6xl": "3rem",
+      "7xl": "3.5rem",
+      "8xl": "4rem",
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'lightning': "url('/images/backgrounds/lightning.png')",
+        'faded-lightning': "url('/images/backgrounds/faded-full-lightning.png')",
+        'two-swirl': "url('/images/backgrounds/two-swirl.png')",
+        'full-swirl': "url('/images/backgrounds/full-swirl.png')",
       },
       colors: {
         lightGray: "#b2b2b2",
         darkGray: "#808080",
+
+      },
+      fontFamily: {
+        raleway: ["Raleway"],
+        montserrat: ["Montserrat"],
       },
     },
   },
   plugins: [],
-}
+};
 
