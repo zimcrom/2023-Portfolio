@@ -88,6 +88,7 @@ const Contact: React.FunctionComponent<{
           action="https://formspree.io/f/mdoqvylq"
           className="flex flex-col"
           method="POST"
+          target="_blank"
         >
           <div className="w-full flex lg:flex-row flex-col gap-4 justify-between">
             <FirstName
@@ -125,7 +126,9 @@ const Contact: React.FunctionComponent<{
             />
           </div>
 
-          <button type="submit">Send it</button>
+          <button type="submit"  className="bg-lightGray rounded-md px-4 py-2 mt-2 text-black hover:bg-darkGray font-raleway text-2xl">
+            Send it
+          </button>
         </form>
       </div>
     </div>

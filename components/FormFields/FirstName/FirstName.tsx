@@ -38,7 +38,7 @@ function FirstName({
         <input
           id="firstName"
           aria-describedby="firstNameError"
-          className={`formInput font-futura w-full border-2 border-black py-3 px-5 text-2xl text-black outline-[#F7941D] ${
+          className={`formInput font-raleway w-full border-2 border-black py-3 px-5 text-2xl text-black outline-[#F7941D] ${
             labelStyle === "inside"
               ? "bg-formInput py-3 md:py-4"
               : "bg-form py-2 md:py-3"
