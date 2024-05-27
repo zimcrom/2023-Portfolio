@@ -56,7 +56,7 @@ const Contact: React.FunctionComponent<{
   return (
     <div
       id="contact"
-      className={`mx-auto flex flex-col items-center ${align} py-10 md:flex-row h-auto w-full relative`}
+      className={`mx-auto flex flex-col items-center ${align} py-10 md:flex-row h-auto w-full relative px-4 lg:px-0`}
     >
       <img
         src={bgImage}
@@ -66,10 +66,10 @@ const Contact: React.FunctionComponent<{
       <div
         className={`flex flex-col md:w-1/2 sm:w-3/4 w-full gap-y-3 lg:gap-y-5 z-10 `}
       >
-        <h2 className="font-raleway text-4xl text-center">Contact Me</h2>
+        <h2 className="font-raleway text-xl lg:text-4xl text-center">Contact Me</h2>
         {header1 && (
           <h2
-            className={`font-raleway text-8xl ${textAlign}`}
+            className={`font-raleway lg:text-8xl text-4xl  ${textAlign}`}
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}
           >
             {header1}

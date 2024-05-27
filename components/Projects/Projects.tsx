@@ -42,12 +42,12 @@ const Projects: React.FunctionComponent<{
         className="lg:aspect-video lg:w-full lg:h-auto h-full aspect-auto object-center flex-1 object-cover absolute z-0"
       />
       <div
-        className={`flex flex-col md:w-1/2 sm:w-3/4 w-full gap-y-3 lg:gap-y-5 z-10 `}
+        className={`flex flex-col md:w-1/2 sm:w-3/4 w-full gap-y-3 lg:gap-y-5 z-10 px-4 lg:px-0`}
       >
-        <h2 className="font-raleway text-4xl text-center">My Projects</h2>
+        <h2 className="font-raleway text-xl lg:text-4xl text-center">My Projects</h2>
         {header1 && (
           <h2
-            className={`font-raleway text-8xl ${textAlign}`}
+            className={`font-raleway lg:text-8xl text-4xl  ${textAlign}`}
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}
           >
             {header1}

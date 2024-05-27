@@ -19,10 +19,10 @@ const TextBlock: React.FunctionComponent<{
       <div
         className={`flex flex-col md:w-1/2 sm:w-3/4 w-full gap-y-3 lg:gap-y-5 z-10 `}
       >
-        {header1 && <p className={`font-raleway text-8xl ${textAlign}`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}>{header1}</p>}
-        {header2 && <h1 className={`font-raleway text-6xl ${textAlign}`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}>{header2}</h1>}
+        {header1 && <p className={`font-raleway lg:text-8xl text-4xl  ${textAlign}`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}>{header1}</p>}
+        {header2 && <h1 className={`font-raleway lg:text-6xl text-2xl ${textAlign}`} style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}>{header2}</h1>}
         <p
-          className={`font-montserrat ${textAlign}`}
+          className={`font-montserrat px-4 lg:px-0 ${textAlign}`}
           dangerouslySetInnerHTML={{ __html: paragraph ? paragraph : "" }}
           style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}
         />
@@ -30,7 +30,7 @@ const TextBlock: React.FunctionComponent<{
           <div>
             <br></br>
             <p
-              className={`font-montserrat ${textAlign}`}
+              className={`font-montserrat px-4 lg:px-0 ${textAlign}`}
               dangerouslySetInnerHTML={{ __html: paragraph2 ? paragraph2 : "" }}
               style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}
             />

@@ -32,10 +32,10 @@ const Experience: React.FunctionComponent<{
       <div
         className={`flex flex-col md:w-1/2 sm:w-3/4 w-full gap-y-3 lg:gap-y-5 z-10 `}
       >
-        <h2 className="font-raleway text-4xl text-center">My experience</h2>
+        <h2 className="font-raleway text-xl lg:text-4xl text-center">My experience</h2>
         {header1 && (
           <h2
-            className={`font-raleway text-8xl ${textAlign}`}
+            className={`font-raleway lg:text-8xl text-4xl  ${textAlign}`}
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}
           >
             {header1}
@@ -43,13 +43,13 @@ const Experience: React.FunctionComponent<{
         )}
         {header2 && (
           <p
-            className={`font-raleway text-2xl ${textAlign}`}
+            className={`font-raleway px-4 lg:px-0 text-xl lg:text-2xl ${textAlign}`}
             style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}
           >
             {header2}
           </p>
         )}
-        <div className="mx-auto grid max-w-5xl gap-12 py-12 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl gap-12 py-12 lg:grid-cols-2 text-center px-4 lg:px-0">
           <div className="grid gap-6">
             <div className="grid gap-1">
               <h3 className="text-xl font-bold">Front-End Development</h3>
