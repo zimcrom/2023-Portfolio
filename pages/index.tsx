@@ -4,6 +4,7 @@ import Experience from "../components/Experience";
 import Spacer from "../components/Spacer/Spacer";
 import Contact from "../components/Contact";
 import ResumeLink from "../components/ResumeLink";
+import Projects from "../components/Projects";
 
 const Home: NextPage<{}> = ({}) => {
   return (
@@ -11,7 +12,7 @@ const Home: NextPage<{}> = ({}) => {
       <TextBlock
         header1="Hey there"
         header2="Welcome to my portfolio"
-        bgImage="/images/backgrounds/two-swirl.png"
+        bgImage="images/backgrounds/lightning.png"
         alt=""
         textAlign="text-center"
         paragraph="I'm a Full Stack Software Engineer with ten years under my belt, diving deep into Retail, Management, and Mentorship. I'm always up for learning something new, especially when it comes to programming languages. My sweet spot is Front End Web Development, and I'm pretty handy with the MERN stack, but my favorite work is using React, Next.js, and Tailwind together."
@@ -22,7 +23,18 @@ const Home: NextPage<{}> = ({}) => {
       <Experience
         header1="A Wide Range of Technologies"
         header2="I have extensive experience in a variety of front-end, back-end, database, programming language, template engine, and cloud platform technologies."
-        bgImage="/images/backgrounds/lightning.png"
+        bgImage="/images/backgrounds/two-swirl.png"
+        alt=""
+        textAlign="text-center"
+        paragraph="I'm a Full Stack Software Engineer with ten years under my belt, diving deep into Retail, Management, and Mentorship. I'm always up for learning something new, especially when it comes to programming languages. My sweet spot is Front End Web Development, and I'm pretty handy with the MERN stack, but my favorite work is using React, Next.js, and Tailwind together."
+        paragraph2="I love a good challenge and enjoy finding creative ways to solve problems. Teaching and mentoring are close to my heart - nothing beats helping future engineers find their footing and reach their potential."
+        align="justify-center"
+      />
+      <Spacer />
+      <Projects
+        header1="Check out some sites I've made"
+        header2="Due to my 80 hour per week work load, I haven't had much time for personal, so many are from work. Check back frequently for more projects!"
+        bgImage="/images/backgrounds/full-swirl.png"
         alt=""
         textAlign="text-center"
         paragraph="I'm a Full Stack Software Engineer with ten years under my belt, diving deep into Retail, Management, and Mentorship. I'm always up for learning something new, especially when it comes to programming languages. My sweet spot is Front End Web Development, and I'm pretty handy with the MERN stack, but my favorite work is using React, Next.js, and Tailwind together."
@@ -35,7 +47,7 @@ const Home: NextPage<{}> = ({}) => {
       <Contact
         header1="Get in Touch"
         header2="Fill out the form below to send me an email"
-        bgImage="/images/backgrounds/full-swirl.png"
+        bgImage="/images/backgrounds/faded-full-lightning.png"
         alt=""
         textAlign="text-center"
         align="justify-center"

@@ -9,27 +9,35 @@ const Header: React.FunctionComponent<{}> = ({}) => {
   useEffect(() => {
     const burgerMenu = document.querySelector(".burger-menu");
 
-    burgerMenu?.classList.add("clicked");
-
-    if (dropDown && !loaded) setLoaded(true);
+    if (dropDown) {
+      burgerMenu?.classList.add("clicked");
+      setLoaded(true);
+    } else {
+      burgerMenu?.classList.remove("clicked");
+      setLoaded(false);
+    }
   }, [dropDown]);
 
   const handleDropDown = () => {
-    const burgerMenu = document.querySelector(".burger-menu");
-
     if (!dropDown) {
       document.body.style.height = "100vh";
       document.body.style.width = "100%";
       document.body.style.overflowY = "hidden";
     } else {
-      burgerMenu?.classList.remove("clicked");
       document.body.style.height = "auto";
       document.body.style.width = "auto";
       document.body.style.overflowY = "auto";
-      setLoaded(false);
     }
 
     setDropDown(!dropDown);
+  };
+
+  const handleLinkClick = () => {
+    // Close the dropdown menu
+    setDropDown(false);
+    document.body.style.height = "auto";
+    document.body.style.width = "auto";
+    document.body.style.overflowY = "auto";
   };
 
   return (
@@ -58,7 +66,7 @@ const Header: React.FunctionComponent<{}> = ({}) => {
               </Link>
             </li>
             <li className="flex px-12">
-              <Link href="/" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray">
+              <Link href="#projects" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray">
                 Projects
               </Link>
             </li>
@@ -77,22 +85,22 @@ const Header: React.FunctionComponent<{}> = ({}) => {
         {loaded && (
           <ul className="lg:hidden h-full w-full items-center justify-evenly flex flex-col my-auto bg-opacity-100 fixed bg-black">
             <li className="flex px-12">
-              <Link href="/" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray">
+              <Link href="#experience" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray" onClick={handleLinkClick}>
                 Experience
               </Link>
             </li>
             <li className="flex px-12">
-              <Link href="/get-inspired" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray">
+              <Link href="#projects" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray" onClick={handleLinkClick}>
                 Projects
               </Link>
             </li>
             <li className="flex px-12">
-              <Link href="/" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray">
+              <Link href="#resume" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray" onClick={handleLinkClick}>
                 Resume
               </Link>
             </li>
             <li className="flex px-12">
-              <Link href="/" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray">
+              <Link href="#contact" rel="noreferrer" className="text-3xl font-montserrat transition-all hover:text-5xl hover:text-lightGray" onClick={handleLinkClick}>
                 Contact
               </Link>
             </li>

@@ -1,0 +1,53 @@
+[
+    {
+        "header1": "Cocktail Collection",
+        "header2": "Work",
+        "src": "https://www.thecocktailcollection.com/",
+        "bgImage": {
+            "src": "/images/cocktail-collection-hero-opacity.jpg",
+            "alt": "",
+            "height": 1000,
+            "width": 1000
+        },
+        "bgHoverImage": {
+            "src": "/images/cocktail-collection-hero-mobile.jpg",
+            "alt": "",
+            "height": 1000,
+            "width": 1000
+        }
+    },
+    {
+        "header1": "21 Seeds",
+        "header2": "Work",
+        "src": "https://www.21seeds.com/",
+        "bgImage": {
+            "src": "/images/21-seeds-hero-opacity.png",
+            "alt": "",
+            "height": 1000,
+            "width": 1000
+        },
+        "bgHoverImage": {
+            "src": "/images/21-seeds-hero.png",
+            "alt": "",
+            "height": 1000,
+            "width": 1000
+        }
+    },
+    {
+        "header1": "Mr Black",
+        "header2": "Work",
+        "src": "https://www.mrblack.co/us",
+        "bgImage": {
+            "src": "/images/mr-black-hero-opacity.png",
+            "alt": "",
+            "height": 1000,
+            "width": 1000
+        },
+        "bgHoverImage": {
+            "src": "/images/mr-black-hero.png",
+            "alt": "",
+            "height": 1000,
+            "width": 1000
+        }
+    }
+]
