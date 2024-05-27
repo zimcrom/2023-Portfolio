@@ -54,6 +54,7 @@
         "header1": "Virtual Bartender",
         "header2": "Personal - in progress",
         "src": "https://virtual-bartender.vercel.app/",
+        "repo": "https://github.com/zimcrom/virtual-bartender",
         "bgImage": {
             "src": "/images/vb-hero-opacity.png",
             "alt": "",
@@ -65,7 +66,6 @@
             "alt": "",
             "height": 1000,
             "width": 1000
-        },
-        "repo": "https://github.com/zimcrom/virtual-bartender"
+        }
     }
 ]

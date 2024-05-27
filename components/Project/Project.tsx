@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ResumeLink: React.FunctionComponent<{
+const Project: React.FunctionComponent<{
   header1?: string;
   header2?: string;
   src: string;
@@ -51,12 +51,14 @@ const ResumeLink: React.FunctionComponent<{
               {header2}
             </p>
             {repo && (
-              <Link
+              <a
                 href={repo}
                 title={header1 + " repo link"}
+                target="_blank"
                 className={`text-center text-white font-raleway text-[1.15rem] capitalize leading-none lg:text-[1.5rem]`}
-              >Link to repo</Link>
+              ><span className="text-white font-raleway">Link to repo</span></a>
             )}
+
           </div>
         </div>
       </Link>
@@ -64,4 +66,4 @@ const ResumeLink: React.FunctionComponent<{
   );
 };
 
-export default ResumeLink;
+export default Project;
