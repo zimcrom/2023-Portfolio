@@ -54,37 +54,37 @@ const Experience: React.FunctionComponent<{
         <div className="mx-auto grid max-w-5xl gap-12 py-12 lg:grid-cols-2 text-center px-4 lg:px-0">
           <div className="grid gap-6">
             <div className="grid gap-1">
-              <h3 className="text-xl font-bold">Front-End Development</h3>
-              <p className="text-gray-500 dark:text-gray-400">
+              <h3 className="text-xl font-bold" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>Front-End Development</h3>
+              <p className="text-black bg-white rounded-xl bg-opacity-60 p-2">
                 HTML5, CSS3, JavaScript, jQuery, Bootstrap, Materialize,
                 Tailwind, React, Angular, TypeScript, NextJS
               </p>
             </div>
             <div className="grid gap-1">
-              <h3 className="text-xl font-bold">Back-End Development</h3>
-              <p className="text-gray-500 dark:text-gray-400">
+              <h3 className="text-xl font-bold" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>Back-End Development</h3>
+              <p className="text-black bg-white rounded-xl bg-opacity-60 p-2">
                 Node.js, Express, PHP, Java, Kotlin, C#, Python
               </p>
             </div>
             <div className="grid gap-1">
-              <h3 className="text-xl font-bold">Databases</h3>
-              <p className="text-gray-500 dark:text-gray-400">MySQL, MongoDB</p>
+              <h3 className="text-xl font-bold" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>Databases</h3>
+              <p className="text-black bg-white rounded-xl bg-opacity-60 p-2">MySQL, MongoDB</p>
             </div>
           </div>
           <div className="grid gap-6">
             <div className="grid gap-1">
-              <h3 className="text-xl font-bold">Programming Languages</h3>
-              <p className="text-gray-500 dark:text-gray-400">
+              <h3 className="text-xl font-bold" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>Programming Languages</h3>
+              <p className="text-black bg-white rounded-xl bg-opacity-60 p-2">
                 JavaScript, TypeScript, Java, Kotlin, C#, Python
               </p>
             </div>
             <div className="grid gap-1">
-              <h3 className="text-xl font-bold">Template Engine</h3>
-              <p className="text-gray-500 dark:text-gray-400">Handlebars.js</p>
+              <h3 className="text-xl font-bold" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>Template Engine</h3>
+              <p className="text-black bg-white rounded-xl bg-opacity-60 p-2">Handlebars.js</p>
             </div>
             <div className="grid gap-1">
-              <h3 className="text-xl font-bold">Cloud Platforms</h3>
-              <p className="text-gray-500 dark:text-gray-400">
+              <h3 className="text-xl font-bold" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>Cloud Platforms</h3>
+              <p className="text-black bg-white rounded-xl bg-opacity-60 p-2">
                 Firebase, Netlify, Heroku
               </p>
             </div>

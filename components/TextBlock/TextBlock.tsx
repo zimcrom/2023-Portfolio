@@ -35,23 +35,23 @@ const TextBlock: React.FunctionComponent<{
         className={`flex flex-col md:w-1/2 sm:w-3/4 w-full gap-y-3 lg:gap-y-5 z-10 `}
       >
         {header1 && (
-          <p className={`font-raleway lg:text-8xl text-4xl  ${textAlign}`}>
+          <p className={`font-raleway lg:text-8xl text-4xl  ${textAlign}`} style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>
             {header1}
           </p>
         )}
         {header2 && (
-          <h1 className={`font-raleway lg:text-6xl text-2xl  ${textAlign}`}>
+          <h1 className={`font-raleway lg:text-6xl text-2xl  ${textAlign}`} style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>
             {header2}
           </h1>
         )}
-        <p className={`font-montserrat px-4 lg:px-0 ${textAlign}`}>
+        <p className={`font-montserrat px-4 lg:px-0 ${textAlign}`} style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>
           {paragraph}
         </p>
 
         {paragraph2 && (
           <div>
             <br></br>
-            <p className={`font-montserrat px-4 lg:px-0 ${textAlign}`}>
+            <p className={`font-montserrat px-4 lg:px-0 ${textAlign}`} style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>
               {paragraph2}
             </p>
           </div>

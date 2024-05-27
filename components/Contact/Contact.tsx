@@ -68,7 +68,7 @@ const Contact: React.FunctionComponent<{
       <div
         className={`flex flex-col md:w-1/2 sm:w-3/4 w-full gap-y-3 lg:gap-y-5 z-10 `}
       >
-        <h2 className="font-raleway text-xl lg:text-4xl text-center">Contact Me</h2>
+        <h2 className="font-raleway text-xl lg:text-4xl text-center" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }}>Contact Me</h2>
         {header1 && (
           <h2
             className={`font-raleway lg:text-8xl text-4xl  ${textAlign}`}

@@ -18,7 +18,8 @@ const ResumeLink: React.FunctionComponent<{
     height: number;
     width: number;
   };
-}> = ({ header1, header2, src, bgImage, bgHoverImage }) => {
+  repo?: string;
+}> = ({ header1, header2, src, bgImage, bgHoverImage, repo }) => {
   return (
     <div className="mx-auto flex flex-col items-center justify-center h-auto w-full relative">
       <Link href={src}>
@@ -44,11 +45,18 @@ const ResumeLink: React.FunctionComponent<{
             <h3 className="text-center font-montserrat text-[1.15rem] font-semibold uppercase leading-none tracking-widest text-white lg:text-[1.5rem]">
               {header1}
             </h3>
-            <h3
-              className={`text-center font-raleway text-[1.15rem] capitalize leading-none lg:text-[1.5rem]`}
+            <p
+              className={`text-center font-raleway text-[1.15rem] capitalize leading-none text-white lg:text-[1.5rem]`}
             >
               {header2}
-            </h3>
+            </p>
+            {repo && (
+              <Link
+                href={repo}
+                title={header1 + " repo link"}
+                className={`text-center text-white font-raleway text-[1.15rem] capitalize leading-none lg:text-[1.5rem]`}
+              >Link to repo</Link>
+            )}
           </div>
         </div>
       </Link>

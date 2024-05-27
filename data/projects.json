@@ -49,5 +49,23 @@
             "height": 1000,
             "width": 1000
         }
+    },
+    {
+        "header1": "Virtual Bartender",
+        "header2": "Personal - in progress",
+        "src": "https://virtual-bartender.vercel.app/",
+        "bgImage": {
+            "src": "/images/vb-hero-opacity.png",
+            "alt": "",
+            "height": 1000,
+            "width": 1000
+        },
+        "bgHoverImage": {
+            "src": "/images/vb-hero.png",
+            "alt": "",
+            "height": 1000,
+            "width": 1000
+        },
+        "repo": "https://github.com/zimcrom/virtual-bartender"
     }
 ]

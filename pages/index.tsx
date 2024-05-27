@@ -12,7 +12,7 @@ const Home: NextPage<{}> = ({}) => {
       <TextBlock
         header1="Hey there"
         header2="Welcome to my portfolio"
-        bgImage="images/backgrounds/lightning.png"
+        bgImage="/images/backgrounds/lightning.png"
         alt=""
         textAlign="text-center"
         paragraph="I'm a Full Stack Software Engineer with ten years under my belt, diving deep into Retail, Management, and Mentorship. I'm always up for learning something new, especially when it comes to programming languages. My sweet spot is Front End Web Development, and I'm pretty handy with the MERN stack, but my favorite work is using React, Next.js, and Tailwind together."
