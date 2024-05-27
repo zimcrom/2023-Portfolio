@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "../Project";
 import projects from "../../data/projects.json";
+import Image from "next/image";
 
 const Projects: React.FunctionComponent<{
   header1?: string;
@@ -36,9 +37,10 @@ const Projects: React.FunctionComponent<{
       id="projects"
       className={`mx-auto flex flex-col items-center ${align} py-10 md:flex-row h-auto w-full relative`}
     >
-      <img
+      <Image
         src={bgImage}
         alt={alt}
+        fill
         className="lg:aspect-video lg:w-full lg:h-auto h-full aspect-auto object-center flex-1 object-cover absolute z-0"
       />
       <div

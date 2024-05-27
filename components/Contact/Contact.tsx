@@ -8,6 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import LastName from "../FormFields/LastName";
 import Email from "../FormFields/Email";
 import FormInput from "../FormFields/FormInput";
+import Image from "next/image";
 
 declare global {
   interface Window {
@@ -58,9 +59,10 @@ const Contact: React.FunctionComponent<{
       id="contact"
       className={`mx-auto flex flex-col items-center ${align} py-10 md:flex-row h-auto w-full relative px-4 lg:px-0`}
     >
-      <img
+      <Image
         src={bgImage}
         alt={alt}
+        fill
         className="lg:aspect-video lg:w-full lg:h-auto h-full aspect-auto object-center flex-1 object-cover absolute z-0"
       />
       <div

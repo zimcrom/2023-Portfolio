@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Experience: React.FunctionComponent<{
@@ -24,9 +25,10 @@ const Experience: React.FunctionComponent<{
       id="experience"
       className={`mx-auto flex flex-col items-center ${align} py-10 md:flex-row h-auto w-full relative`}
     >
-      <img
+      <Image
         src={bgImage}
         alt={alt}
+        fill
         className="lg:aspect-video lg:w-full lg:h-auto h-full aspect-auto object-center flex-1 object-cover absolute z-0"
       />
       <div

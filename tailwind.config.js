@@ -19,15 +19,15 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'lightning': "url('/images/backgrounds/lightning.png')",
-        'faded-lightning': "url('/images/backgrounds/faded-full-lightning.png')",
-        'two-swirl': "url('/images/backgrounds/two-swirl.png')",
-        'full-swirl': "url('/images/backgrounds/full-swirl.png')",
+        lightning: "url('/images/backgrounds/lightning.png')",
+        "faded-lightning":
+          "url('/images/backgrounds/faded-full-lightning.png')",
+        "two-swirl": "url('/images/backgrounds/two-swirl.png')",
+        "full-swirl": "url('/images/backgrounds/full-swirl.png')",
       },
       colors: {
         lightGray: "#b2b2b2",
         darkGray: "#808080",
-
       },
       fontFamily: {
         raleway: ["Raleway"],
@@ -35,6 +35,20 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".text-outline": {
+          "-webkit-text-stroke": "1px black",
+        },
+        ".text-outline-md": {
+          "-webkit-text-stroke": "2px black",
+        },
+        ".text-outline-lg": {
+          "-webkit-text-stroke": "3px black",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
-
