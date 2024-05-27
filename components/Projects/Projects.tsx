@@ -39,7 +39,7 @@ const Projects: React.FunctionComponent<{
       <img
         src={bgImage}
         alt={alt}
-        className="aspect-video w-full h-auto flex-1 object-cover absolute z-0"
+        className="lg:aspect-video lg:w-full lg:h-auto h-full aspect-auto object-center flex-1 object-cover absolute z-0"
       />
       <div
         className={`flex flex-col md:w-1/2 sm:w-3/4 w-full gap-y-3 lg:gap-y-5 z-10 `}

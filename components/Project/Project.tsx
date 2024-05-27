@@ -23,14 +23,6 @@ const ResumeLink: React.FunctionComponent<{
     <div className="mx-auto flex flex-col items-center justify-center h-auto w-full relative">
       <Link href={src}>
         <div className="product-wrapper py-auto relative flex h-full flex-col items-center justify-center overflow-hidden rounded-md">
-          <div className="mx-auto block w-full py-8 md:hidden ">
-            <h3 className="text-center font-raleway text-[1.3rem] font-semibold uppercase leading-none tracking-widest md:text-white lg:text-[1.5rem]">
-              {header1}
-            </h3>
-            <span className=" text-center font-raleway text-[1.15rem] capitalize leading-none lg:text-[1.5rem]">
-              {header2}
-            </span>
-          </div>
           <Image
             src={bgImage.src}
             alt={bgImage.alt}
@@ -48,7 +40,7 @@ const ResumeLink: React.FunctionComponent<{
             className="hoverImg mx-auto"
           />
 
-          <div className="absolute bottom-8 z-10 hidden md:block">
+          <div className="absolute bottom-8 z-10 block">
             <h3 className="text-center font-montserrat text-[1.15rem] font-semibold uppercase leading-none tracking-widest text-white lg:text-[1.5rem]">
               {header1}
             </h3>
